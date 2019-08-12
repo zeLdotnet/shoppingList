@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Shopping Cart </title>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script src="shoppingList.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1> Shopping List </h1>
+
+    <div>
+        <form id="container">
+            item:
+            <input type="input" name="item" id="foodType">
+            quantity:
+            <input type="number" name="quantity" min="1" id="foodNum">
+            price:
+            <input type="number" name="price" min="0" id="foodPrice">
+            <button type="button">add item(s)</button>
+        </form>
+
+        <div id="total">
+
+            <h3>Total</h3>
+            <span id="finalTotal"></span>
+        </div>
+        <div id="listContain">
+
+            <h3>Cart</h3>
+            <ul id="listItems"> </ul>
+        </div>
+    </div>
+</body>
+
+</html>
